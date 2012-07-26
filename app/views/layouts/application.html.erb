@@ -10,18 +10,23 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <div class="wrap">
-      <header>
+    
+    <header>
+      <div class="wrap">
         <% flash.each do |name, msg| %>
           <%= content_tag :div, msg, :id => "flash_#{name}" %>
         <% end %>
 
         <a href="/" class="di-logo"></a>
+        <q>"Hands down the most exciting startup event in our nation's capital."<br/ > - Bisnow</q>
         <a href="http://apply.distilledintelligence.com" class="button cta">Want to pitch? Apply now!</a>
-      </header>
+      </div>
+    </header>
+    
 
-      <%= yield %>
+    <%= yield %>
 
+    <div class="wrap">
       <footer>
         <ul>
           <li><a href="http://apply.distilledintelligence.com">Apply as a Startup</a></li>
@@ -31,7 +36,6 @@
           <li class="nav-right"><a href="http://thefort.vc">The Fort</a></li>
         </ul>  
       </footer>
-
     </div><!-- end .wrap -->
   </body>
 </html>

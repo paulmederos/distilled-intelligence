@@ -5,6 +5,7 @@
 body {
 	font-family: 'Myriad Pro', sans-serif;
 	font-size: small;
+	background:url("light_noise_diagonal.png");
 }
 
 h1, h2, h3, h4 {
@@ -50,7 +51,7 @@ a:hover { color: black; }
 
 
 header {
-	background: url("header-bg-1024x639.png") no-repeat;
+	background: url("header-bg-1920x639.png") no-repeat;
 	padding: 5em 0 2em;
 	
 	.di-logo {
@@ -65,6 +66,20 @@ header {
 		display: block;
 		margin: 3em auto;
 		width: 300px;
+	}
+
+	q {
+		width: 75%;
+		margin: 2em auto 0;
+		display: block;
+		font-size: 2em;
+		font-style: italic;
+		color: white;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+		font-family: "Chaparral Pro", "Georgia", serif;
+		font-weight: 100;
+		line-height: 1.4;
+		text-align: center;
 	}
 }
 
@@ -93,7 +108,7 @@ header {
 }
 
 
-section { border-top: 1px solid black; }
+section { }
 
 #sponsors {
 	padding-top: 3em;
@@ -103,12 +118,14 @@ section { border-top: 1px solid black; }
 	margin-left: 0;
 	padding-bottom: 2em;
 	box-shadow: inset 0 1px 2px rgba(255,255,255,.3);
-	width: 380px;
+	width: 378px;
 	float:left;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
 	box-shadow: 0 1px 3px rgba(0,0,0,.5);
 	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
 }
 
 	#sponsors h2 {
@@ -144,6 +161,7 @@ section { border-top: 1px solid black; }
 	width: 500px;
 	padding-top: 2em;
 	padding-left: 40px;
+	margin-bottom: 3em;
 	
 	ol {
 		margin-bottom: 2em;
@@ -348,6 +366,10 @@ footer {
 	.wrap {
 		width: 480px;
 	}	
+
+	header {
+		background: url("header-bg-1024x639.png") no-repeat;
+	}
 	
 	header .di-logo {
 		background: url("distilled-logo-340x88.png");
