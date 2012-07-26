@@ -1,0 +1,353 @@
+/*------------------------------------*\
+  Application-wide defaults
+\*------------------------------------*/
+
+body {
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: small;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Gill Sans', 'Myriad Pro', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+h2 { font-size: 24px; }
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 17px;
+	font-weight: 100;
+}
+
+a { color: #ba0000; text-decoration: none; }
+a:hover { color: black; }
+
+.cf {
+  *zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: "";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.wrap {
+	width: 920px;
+	margin: 0 auto;
+}
+
+
+header {
+	background: url("header-bg-1024x639.png") no-repeat;
+	padding: 5em 0 2em;
+	
+	.di-logo {
+		display: block;
+		margin: 0 auto;
+		background: url("distilled-logo-500x130.png");
+		width: 500px;
+		height: 130px;
+	}
+	
+	 a.button {
+		display: block;
+		margin: 3em auto;
+		width: 300px;
+	}
+}
+
+
+#event-details {
+	background: rgba(45,45,45,1);
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
+	padding: 5em 0;
+	border-top: 1px solid black;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+	padding-left: 4em;
+	
+	h2 {
+		margin-bottom: .5em;
+	}
+	
+	.detail {
+		float:left;
+		display: block;
+		width: 30%;
+		margin-left: 2.5em;
+		
+		&.alpha { margin-left: 0; }
+	}
+}
+
+
+section { border-top: 1px solid black; }
+
+#sponsors {
+	padding-top: 3em;
+	background: #990000;
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
+	margin-left: 0;
+	padding-bottom: 2em;
+	box-shadow: inset 0 1px 2px rgba(255,255,255,.3);
+	width: 380px;
+	float:left;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	border-bottom: 1px solid #333;
+}
+
+	#sponsors h2 {
+		margin-left: 2em;
+		margin-bottom: 1em;
+	}
+	
+	#sponsors .button {
+		width:200px;
+		margin: 0 auto;
+		display: block;
+	}
+
+.sponsor-pair {
+	width: 310px;
+	margin: 0 auto;
+}
+
+.sponsor {
+	display: block;
+	float:left;
+	width:140px;
+	height:140px;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	background: white;
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+#why-apply {
+	float: left;
+	display: block;
+	width: 500px;
+	padding-top: 2em;
+	padding-left: 40px;
+	
+	ol {
+		margin-bottom: 2em;
+	}
+}
+
+#graduates {
+	clear:both;
+	padding-top: 4em;
+	
+	h2 { margin: 0 0 2em; }
+	
+	li:nth-child(2n+1) .graduate {
+		margin-left: 0;
+	}
+	
+	.graduate {
+		font-size: 1.2em;
+		line-height: 1.4;
+		margin-bottom: 1em;
+		width: 452px;
+		float: left;
+		margin-left: 1em
+	}
+	
+	.graduate img {
+		float:left;
+		width: 100%;
+		margin: 1em 0;
+	}
+}
+
+	
+footer {
+	padding: 3em 0 2em;
+}
+	
+	footer ul li a {
+		float:left;
+		display: block;
+		margin-right: 2em;
+		text-align: left;
+	}
+	
+	footer ul li.nav-right a {
+		float:right;
+		display: block;
+		margin-left: 2em;
+		text-align: right;
+	}
+	
+/*------------------------------------*\
+  	Buttons
+\*------------------------------------*/
+	
+.button {
+	display: inline-block;
+	margin-bottom: 0;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%), #ba0000;
+	font-size: 20px;
+	padding: .5em;
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
+	text-transform: uppercase;
+	font-family: 'Gill Sans', sans-serif;
+	font-weight: 300;
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	padding: .75em 1.5em;
+	
+	&:hover {
+		text-decoration: none;
+		color: white;
+		background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 100%), #ba0000;
+		box-shadow: 0 1px 1px rgba(0,0,0,.3);
+	}
+	
+	&:active {
+		background: #ba0000;
+		box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
+	}
+}
+
+
+
+.button.cta {
+	background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%), #e88f02;
+	
+	&:hover { background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 100%), #e88f02;}
+	&:active { background: #e88f02; }
+}
+
+
+/*------------------------------------*\
+	  Responsiveness
+\*------------------------------------*/
+
+@media (max-width: 919px) {
+	.wrap {
+		width: 640px;
+	}	
+	
+	h2, h3, p {
+		text-align: center;
+	}
+	
+	#event-details{
+		padding:2em 0 0;
+		
+		.detail {
+			width: 100%;
+			display: block;
+			margin: 0 0 2em 0;
+			text-align: center;
+			line-height: 1.4;
+		}
+	}
+	
+	#sponsors {
+		width: 100%;
+	}
+	
+	#graduates {
+		border-top: 1px solid black;
+		background: rgba(200,200,200,.1);
+		border: 1px solid rgba(0,0,0,.3);
+		box-shadow: 0 0 3px rgba(0,0,0,.3);
+		
+		.graduate {
+			display: block;
+			width: 80%;
+			margin: 0 auto 2.4em !important;
+			float: none;
+			
+			p {
+				text-align: left;
+			}
+		}
+	}
+
+	
+}
+	
+@media (max-width: 640px) {
+
+	.wrap {
+		width: 480px;
+	}	
+	
+	header .di-logo {
+		background: url("distilled-logo-340x88.png");
+		width: 340px;
+		height: 88px;
+	}
+
+	.sponsor-pair {
+		width: 280px;
+		margin: 0 auto;
+	}
+		
+	.sponsor {
+		width:120px;
+		height:120px;
+		margin-left: 10px;
+	}
+	
+	#why-apply {
+		padding-left: 0;
+		width: 100%;
+		
+		a.button {
+			width:100%;
+			padding: 1em 0;
+		}
+	}
+	
+	footer {
+		padding: .5em 0; 
+		ul li a {
+			font-size: 1.4em;
+			display: block;
+			margin: 1em auto;
+			float:none !important;
+			text-align: center !important; 
+		}
+		
+		ul li.nav-right a {
+			float:none;
+			margin-left: 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	header {		
+		a.button { width: 280px; }
+	}
+
+	.wrap {
+		width:360px;
+	}
+}
