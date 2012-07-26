@@ -377,6 +377,10 @@ footer {
 		height: 78px;
 	}
 
+	#sponsors h2 {
+		margin-left: 0em;
+	}
+
 	.sponsor-pair {
 		width: 280px;
 		margin: 0 auto;
@@ -416,11 +420,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-	header {		
-		a.button { width: 280px; }
-	}
 
 	.wrap {
 		width:320px;
+	}
+
+	.button {
+		width: 260px;
+		padding: 1em .25em;
 	}
 }
