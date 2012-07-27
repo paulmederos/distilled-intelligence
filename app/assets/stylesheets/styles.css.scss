@@ -343,14 +343,14 @@ footer {
 
 .button.cta {
 	background-color:  #e88f02;
-	background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%);
+	background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%), #e88f02;
 	background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%), #e88f02;
 	
 	&:hover { 
-		background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%);
+		background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%), #e88f02;
 		background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 100%), #e88f02;
 	}
-	
+
 	&:active { background: #e88f02; }
 }
 
