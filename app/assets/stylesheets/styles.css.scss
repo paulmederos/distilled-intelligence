@@ -153,8 +153,12 @@ section { }
 	margin-left: 1em;
 	margin-bottom: 1em;
 	background: white;
-	border: 1px solid rgba(0,0,0,.2);
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 0px rgba(255,255,255,.4);
+	text-indent: -9999em;
 }
+
+#aed { background: url("AED-logo-140x140.png") no-repeat; }
 
 #why-apply {
 	float: left;
@@ -438,6 +442,8 @@ footer {
 		height:120px;
 		margin-left: 10px;
 	}
+
+	#aed { background: url("AED-logo-120x120.png") no-repeat; }
 	
 	#why-apply {
 		padding-left: 0;
