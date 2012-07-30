@@ -61,11 +61,18 @@ header {
 		width: 500px;
 		height: 130px;
 	}
+
+	a { 
+		color: white; 
+		text-decoration: underline;
+		&:hover { color:white; color: #ba0000; } 
+	}
 	
 	 a.button {
 		display: block;
 		margin: 3em auto;
 		width: 300px;
+		text-decoration: none;
 	}
 
 	q {
