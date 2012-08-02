@@ -1,0 +1,33 @@
+<header>
+  <div class="wrap cf">
+
+    <a href="/" class="di-logo"></a>
+
+    <div class="intro cf">
+      <div class="detail third-column">
+        <h2>What</h2>
+        <p>The DC regions hottest pitch event for start-ups.</p>
+      </div>
+      <div class="detail third-column">
+        <h2>When</h2>
+        <p> Thursday October 11th &amp;<br />
+          Friday October 12, 2012</p>
+      </div>
+      <div class="detail third-column">
+        <h2>Where</h2>
+        <p>The Carnegie Library<br />
+          801 K Street NW<br />
+          Washington DC 20001</p>
+      </div>
+    </div><!-- end .intro -->
+
+    <div class="quote-slider">
+      <q>"My expectations were crushed by the sheer awesomeness of Distilled Intelligence 1.0. The Fortify team is front-and-center in putting the DC startup scene on the map, and DI has a lot to do with that."<br/ > - Dan Berger, <a href="http://www.socialtables.com">SocialTables</a></q>
+    </div>
+
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+
+  </div><!-- end .wrap -->
+</header>

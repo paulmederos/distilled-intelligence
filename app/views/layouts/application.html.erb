@@ -21,18 +21,7 @@ a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track
   </head>
   <body>
     
-    <header>
-      <div class="wrap">
-        <% flash.each do |name, msg| %>
-          <%= content_tag :div, msg, :id => "flash_#{name}" %>
-        <% end %>
-
-        <a href="/" class="di-logo"></a>
-        <q>"My expectations were crushed by the sheer awesomeness of Distilled Intelligence 1.0. The Fortify team is front-and-center in putting the DC startup scene on the map, and DI has a lot to do with that."<br/ > - Dan Berger, <a href="http://www.socialtables.com">SocialTables</a></q>
-        <a href="http://apply.distilledintelligence.com" class="button cta" id="main-cta">Want to pitch? Apply now!</a>
-      </div>
-    </header>
-    
+    <%= render 'layouts/header' %>    
 
     <%= yield %>
 
