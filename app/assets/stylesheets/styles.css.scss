@@ -55,7 +55,7 @@ a:hover { color: black; }
 
 
 header {
-	/* background: url("header-bg-1920x639.png") no-repeat; */
+	 background: url("header-bg-1920x639.png") no-repeat; 
 	background-color: #d69255;
 	padding: 5em 0 2em;
 	
@@ -495,7 +495,7 @@ footer {
 	}
 
 	header {
-		/*background: url("header-bg-1024x639.png") no-repeat;*/
+		background: url("header-bg-639x1024.png") no-repeat;
 
 		.di-logo {
 			background: url("distilled-logo-300x78.png");
@@ -517,6 +517,18 @@ footer {
 		width: 260px;
 		padding: 1em .25em;
 	}
+
+	header .intro {
+		margin-top: 0;
+	}
+
+
+	#slider li {
+		width:300px !important; 
+	}
+
+		.bx-prev{ left: 0px; }
+		.bx-next { right: 0px; }
 
 	#sponsors {
 		padding-top: 0;
