@@ -14,7 +14,7 @@ body {
 
 h1, h2, h3, h4 {
 	font-family: 'Gill Sans', 'Myriad Pro', sans-serif;
-	font-weight: 100;
+	font-weight: 500;
 	text-transform: uppercase;
 }
 
@@ -55,7 +55,7 @@ a:hover { color: black; }
 
 
 header {
-	 background: url("header-bg-1920x639.png") no-repeat; 
+	background: url("header-bg-1920x639.png") no-repeat; 
 	background-color: #d69255;
 	padding: 5em 0 2em;
 	
@@ -78,9 +78,17 @@ header {
 		margin-top: 4em;
 	}
 
+	.quote-slider {
+		width: 920px;
+		display: block;
+		margin: 4em auto 0;
+	}
+
+		.bx-prev{ left: -100px; opacity: .2; }
+		.bx-next { right: -100px; opacity: .2; }
+
 	q {
-		width: 75%;
-		margin: 2em auto 0;
+		width: 920px;
 		display: block;
 		font-size: 2em;
 		font-style: italic;
@@ -173,6 +181,8 @@ section { }
 		display: block;
 	}
 
+	ul { padding-top: 2em; clear:both; }
+
 	.sponsor {
 		float:left;
 		width:282px;
@@ -235,7 +245,7 @@ section { }
 
 	#email-signup {
 		display: block;
-		width: 400px;
+		width: 420px;
 		margin: 0 auto;
 	}
 
@@ -355,7 +365,9 @@ footer {
 	}
 }
 
-
+.button.transparent {
+	background-color: transparent;
+}
 
 .button.cta {
 	background-color:  #e88f02;
@@ -374,115 +386,6 @@ footer {
 /*------------------------------------*\
 	  Responsiveness
 \*------------------------------------*/
-
-/*@media (max-width: 919px) {
-	.wrap {
-		width: 640px;
-	}	
-	
-	h2, h3, p {
-		text-align: center;
-	}
-	
-	#event-details, #newsletter{
-		padding:2em 0 0;
-		
-		.detail {
-			width: 100%;
-			display: block;
-			margin: 0 0 2em 0;
-			text-align: center;
-			line-height: 1.4;
-		}
-	}
-	
-	#sponsors {
-		width: 100%;
-	}
-	
-	#graduates {
-		border-top: 1px solid black;
-		background: rgba(200,200,200,.1);
-		border: 1px solid rgba(0,0,0,.3);
-		box-shadow: 0 0 3px rgba(0,0,0,.3);
-		
-		.graduate {
-			display: block;
-			width: 80%;
-			margin: 0 auto 2.4em !important;
-			float: none;
-			
-			p {
-				text-align: left;
-			}
-		}
-	}
-
-	#newsletter {
-		margin-top: 2em;
-		padding-bottom: 2em;
-	}
-}
-	
-@media (max-width: 640px) {
-
-	.wrap {
-		width: 480px;
-	}	
-
-	header {
-		background: url("header-bg-1024x639.png") no-repeat;
-	}
-	
-	header .di-logo {
-		background: url("distilled-logo-300x78.png");
-		width: 300px;
-		height: 78px;
-	}
-
-	#sponsors h2 {
-		margin-left: 0em;
-	}
-
-	.sponsor-pair {
-		width: 280px;
-		margin: 0 auto;
-	}
-		
-	.sponsor {
-		width:120px;
-		height:120px;
-		margin-left: 10px;
-	}
-
-	#aed { background: url("AED-logo-120x120.png") no-repeat; }
-	
-	#why-apply {
-		padding-left: 0;
-		width: 100%;
-		
-		a.button {
-			width:100%;
-			padding: 1em 0;
-		}
-	}
-	
-	footer {
-		padding: .5em 0; 
-		ul li a {
-			font-size: 1.4em;
-			display: block;
-			margin: 1em auto;
-			float:none !important;
-			text-align: center !important; 
-		}
-		
-		ul li.nav-right a {
-			float:none;
-			margin-left: 0;
-		}
-	}
-}*/
 
 @media (max-width: 480px) {
 
@@ -503,10 +406,20 @@ footer {
 			height: 78px;
 		}
 
-		q {
-			font-size:1.4em;
-			text-align: left;
-		}
+		.quote-slider {
+			width: 240px;
+			display: block;
+			margin: 4em auto 0;
+
+			.bx-prev{ left: -40px; }
+			.bx-next { right: -40px; }
+
+			q {
+				width: 240px;
+				text-align: center;
+				font-size: 1.3em;
+			}
+		}	
 	}
 
 	.third-column { width: 100%;}
@@ -521,14 +434,6 @@ footer {
 	header .intro {
 		margin-top: 0;
 	}
-
-
-	#slider li {
-		width:300px !important; 
-	}
-
-		.bx-prev{ left: 0px; }
-		.bx-next { right: 0px; }
 
 	#sponsors {
 		padding-top: 0;
