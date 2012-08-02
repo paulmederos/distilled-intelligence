@@ -175,7 +175,7 @@ section { }
 
 	.sponsor {
 		float:left;
-		width:31%;
+		width:282px;
 		display: block;
 		height:140px;
 		margin-left: 1em;
@@ -185,10 +185,12 @@ section { }
 		box-shadow: 0 1px 0px rgba(255,255,255,.4);
 		text-indent: -9999em;
 	}
+
+	#aed { background: url("AED-logo-282x140.png") no-repeat, white; }
+	#one_city { background: url("OneCity-logo-282x140.png") no-repeat, white; }
+	#events_dc { background: url("eventsDC-logo-282x140.png") no-repeat, white; }
 }
 
-
-#aed { background: url("AED-logo-140x140.png") no-repeat; }
 
 #graduates {
 	clear:both;
@@ -517,7 +519,6 @@ footer {
 	}
 
 	#sponsors {
-		width: 100%;
 		padding-top: 0;
 		padding-left: 0;
 		margin-bottom: 2em;
@@ -528,8 +529,6 @@ footer {
 		}
 
 		.sponsor {
-			width:90%;
-			height:120px;
 			margin: 0 auto 1em;
 			float: none;
 			padding-left: 0;

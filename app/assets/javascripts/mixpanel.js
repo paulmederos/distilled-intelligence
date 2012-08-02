@@ -1,5 +1,12 @@
 $(document).ready(function() {
-  mixpanel.track("Visited DI Site");
+
+	$("#slider").bxSlider({
+		auto: true,
+		speed:400,
+		randomStart: true
+	});
+
+  	mixpanel.track("Visited DI Site");
 
  	$("#become-a-sponsor").click(function() {
 	  mixpanel.track("Sponsor was interested");
@@ -28,4 +35,5 @@ $(document).ready(function() {
 	$(".footer-link").click(function() {
 	  mixpanel.track("A footer link was clicked");
 	});
+
 });
