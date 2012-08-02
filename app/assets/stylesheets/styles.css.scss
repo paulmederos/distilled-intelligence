@@ -379,7 +379,7 @@ footer {
 @media (max-width: 480px) {
 
 	.wrap {
-		width:310px;
+		width:288px;
 	}
 
 	h2, h3, p {
@@ -492,4 +492,20 @@ footer {
 	}
 
 	#faqs { margin-top: 0;}
+
+	footer ul li a {
+		width:100%;
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	footer ul li.nav-right a {
+		float:none;
+		width:100%;	
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+		margin-left: 0;
+	}
 }
