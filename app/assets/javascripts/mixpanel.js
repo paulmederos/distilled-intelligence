@@ -1,5 +1,11 @@
 $(document).ready(function() {
-	$("#slider").bxSlider();
+	$("#slider").bxSlider({
+		auto: true,
+		speed:200,
+		pause: 5000,
+		mode: 'fade',
+		randomStart: true
+	});
 	
   	mixpanel.track("Visited DI Site");
 
