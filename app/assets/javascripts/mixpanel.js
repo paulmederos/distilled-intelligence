@@ -1,13 +1,6 @@
 $(document).ready(function() {
-
-	$("#slider").bxSlider({
-		auto: true,
-		speed:200,
-		pause: 5000,
-		mode: 'fade',
-		randomStart: true
-	});
-
+	$("#slider").bxSlider();
+	
   	mixpanel.track("Visited DI Site");
 
  	$("#become-a-sponsor").click(function() {
