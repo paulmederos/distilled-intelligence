@@ -150,11 +150,6 @@ header {
 	border-top: 1px solid #111;
 	border-bottom: 1px solid #333;
 
-	h2 {
-		margin-bottom: 1em;
-		margin-left: .5em;
-	}
-
 	p {
 		clear:both;
 		margin-left: 1em;
@@ -171,7 +166,27 @@ header {
 		display: block;
 	}
 
+	#aed { background: url("AED-logo-282x140.png") no-repeat, white; }
+	#one_city { background: url("OneCity-logo-282x140.png") no-repeat, white; }
+	#events_dc { background: url("eventsDC-logo-282x140.png") no-repeat, white; }
+}
+
+#community-sponsors {
+	margin-top: 2em;
+
+	#cofounders_lab { background: url("cofounderslab-logo-282x140.png") no-repeat, white; }
+	#dcye { background: url("dcye-logo-282x140.png") no-repeat, white; }
+	#dingman { background: url("dingman-logo-282x140.png") no-repeat, white; }
+	#verge { background: url("verge-logo-282x140.png") no-repeat, white; }
+}
+
+#sponsors, #community-sponsors {
 	ul { padding-top: 2em; clear:both; }
+
+	h2 {
+		margin-bottom: 1em;
+		margin-left: .5em;
+	}
 
 	.sponsor {
 		float:left;
@@ -186,9 +201,6 @@ header {
 		text-indent: -9999em;
 	}
 
-	#aed { background: url("AED-logo-282x140.png") no-repeat, white; }
-	#one_city { background: url("OneCity-logo-282x140.png") no-repeat, white; }
-	#events_dc { background: url("eventsDC-logo-282x140.png") no-repeat, white; }
 }
 
 
