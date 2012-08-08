@@ -171,14 +171,6 @@ header {
 	#events_dc { background: url("eventsDC-logo-282x140.png") no-repeat, white; }
 }
 
-#community-sponsors {
-	margin-top: 2em;
-
-	#cofounders_lab { background: url("cofounderslab-logo-282x140.png") no-repeat, white; }
-	#dcye { background: url("dcye-logo-282x140.png") no-repeat, white; }
-	#dingman { background: url("dingman-logo-282x140.png") no-repeat, white; }
-	#verge { background: url("verge-logo-282x140.png") no-repeat, white; }
-}
 
 #sponsors, #community-sponsors {
 	ul { padding-top: 2em; clear:both; }
@@ -304,6 +296,24 @@ header {
 	#register-now {
 		color: darken($cta-orange, 10%);
 	}
+}
+
+#community-sponsors {
+	margin-top: 2em;
+
+	#cofounders_lab { background: url("cofounderslab-logo-141x70.png") no-repeat, white; }
+	#dcye { background: url("dcye-logo-141x70.png") no-repeat, white; }
+	#dingman { background: url("dingman-logo-141x70.png") no-repeat, white; }
+	#verge { background: url("verge-logo-141x70.png") no-repeat, white; }
+	#startup_america { background: url("startup_america-logo-141x70.png") no-repeat, white; }
+	#lsm { background: url("lsm-logo-141x70.png") no-repeat, white; }
+}
+
+#community-sponsors .sponsor {
+	width:141px;
+	height:70px;
+	margin-left: .5em;
+	margin-bottom: .5em;
 }
 
 
@@ -504,6 +514,10 @@ footer {
 	}
 
 	#faqs { margin-top: 0;}
+
+	#community-sponsors .sponsor {
+		margin:0;
+	}
 
 	footer ul li a {
 		width:100%;
