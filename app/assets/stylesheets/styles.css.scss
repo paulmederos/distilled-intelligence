@@ -390,6 +390,14 @@ footer {
 	background-color: transparent;
 }
 
+.button.disabled {
+	cursor:default;
+	position:relative;
+	padding-top:0;
+
+	del { font-size:.5em; }
+}
+
 .button.cta {
 	background-color:  #e88f02;
 	background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%), #e88f02;
